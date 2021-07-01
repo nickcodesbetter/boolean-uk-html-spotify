@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: 
+    "left-side main" 3fr
+    "footer footer" 1fr /
+    1fr 3fr;
+}
+
+.left-side {
+    background-color: lightblue;
+    grid-area: left-side;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: auto 1fr 2fr auto;
+}
+
+.main {
+    background-color: lightgreen;
+    grid-area: main;
+}
+
+.footer {
+    background-color: lightpink;
+    grid-area: footer;
+}
+
+.logo,
+.left-navbar,
+.playlist,
+.left-buttons {
+    border: 2px dotted red;
+}
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.nav-icon {
+    width: 20px;
+}
+
+.left-buttons .nav-icon {
+    width: 12px;
+}
+
+.left-buttons .profile {
+    width: 15px;
+}
